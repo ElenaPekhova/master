@@ -1,4 +1,4 @@
-e_all = 0
+price_all = 0
 while True:
     try:
         ticket_number = input('Сколько билетов вы хотите приобрести на мероприятие? ')
