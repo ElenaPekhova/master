@@ -1,2 +1,18 @@
-cnhjrf
-,kf,kf
+from tkinter import *
+from time import *
+
+root = Tk()
+root.config(bg="black")
+root.title("часы")
+root.geometry("500*400+400+200")
+
+box = Label(root, text="00:00:00", bg="black", fg="lime", font="Arial 50")
+box.pack(pady=50)
+def tick():
+    t = strftime("%H:%M:%S")
+    box.config(text=t)
+    box.after(1000, tick)
+
+tick()
+
+root.mainloop()
